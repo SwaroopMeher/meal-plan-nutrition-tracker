@@ -1,0 +1,171 @@
+[
+  {
+    "id": "protein-oatmeal",
+    "name": "Protein Oatmeal",
+    "type": "breakfast",
+    "components": [
+      { "foodId": "rolled-oats", "quantity": 1 },
+      { "foodId": "whey-protein", "quantity": 1 },
+      { "foodId": "chia-seeds", "quantity": 1 },
+      { "foodId": "walnuts-quarter-cup", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "six-egg-omelette",
+    "name": "6-Egg Omelette",
+    "type": "breakfast",
+    "components": [
+      { "foodId": "large-egg", "quantity": 6 }
+    ]
+  },
+  {
+    "id": "great-grains-cereal-milk",
+    "name": "Great Grains Cereal with Milk",
+    "type": "breakfast",
+    "components": [
+      { "foodId": "great-grains-cereal", "quantity": 1.5 },
+      { "foodId": "milk-2percent", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "tomato-dal-rice",
+    "name": "Tomato Dal with Brown Rice",
+    "type": "lunch",
+    "components": [
+      { "foodId": "tomato-dal", "quantity": 2 },
+      { "foodId": "brown-rice-cooked", "quantity": 1.5 }
+    ]
+  },
+  {
+    "id": "chickpea-curry-chapati",
+    "name": "Chickpea Curry with Chapati",
+    "type": "lunch",
+    "components": [
+      { "foodId": "chickpea-curry", "quantity": 2 },
+      { "foodId": "chapati-medium", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "black-bean-curry-rice",
+    "name": "Black Bean Curry with Brown Rice",
+    "type": "lunch",
+    "components": [
+      { "foodId": "black-bean-curry", "quantity": 2 },
+      { "foodId": "brown-rice-cooked", "quantity": 1.5 }
+    ]
+  },
+  {
+    "id": "spinach-dal-rice",
+    "name": "Spinach Dal with Brown Rice",
+    "type": "lunch",
+    "components": [
+      { "foodId": "spinach-dal", "quantity": 2 },
+      { "foodId": "brown-rice-cooked", "quantity": 1.5 }
+    ]
+  },
+  {
+    "id": "potato-fry",
+    "name": "Potato Fry",
+    "type": "dinner",
+    "components": [
+      { "foodId": "potato-fry", "quantity": 2 }
+    ]
+  },
+  {
+    "id": "spaghetti-mixed-veg",
+    "name": "Spaghetti with Mixed Vegetable Curry",
+    "type": "dinner",
+    "components": [
+      { "foodId": "spaghetti-cooked", "quantity": 2 },
+      { "foodId": "mixed-vegetable-curry", "quantity": 1.5 }
+    ]
+  },
+  {
+    "id": "paneer-curry-rice",
+    "name": "Paneer Curry with Brown Rice",
+    "type": "dinner",
+    "components": [
+      { "foodId": "paneer-curry", "quantity": 1.5 },
+      { "foodId": "brown-rice-cooked", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "veg-fried-rice",
+    "name": "Vegetable Fried Rice",
+    "type": "dinner",
+    "components": [
+      { "foodId": "veg-fried-rice", "quantity": 2 }
+    ]
+  },
+  {
+    "id": "greek-yogurt-banana",
+    "name": "Greek Yogurt with Banana",
+    "type": "snack1",
+    "components": [
+      { "foodId": "greek-yogurt-2percent", "quantity": 1 },
+      { "foodId": "banana-medium", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "greek-yogurt-pomegranate",
+    "name": "Greek Yogurt with Pomegranate",
+    "type": "snack1",
+    "components": [
+      { "foodId": "greek-yogurt-2percent", "quantity": 1 },
+      { "foodId": "pomegranate-arils", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "apple-peanut-butter",
+    "name": "Apple with Peanut Butter",
+    "type": "snack1",
+    "components": [
+      { "foodId": "apple-medium", "quantity": 1 },
+      { "foodId": "peanut-butter-tbsp", "quantity": 2 }
+    ]
+  },
+  {
+    "id": "apple-walnuts",
+    "name": "Apple with Walnuts",
+    "type": "snack1",
+    "components": [
+      { "foodId": "apple-medium", "quantity": 1 },
+      { "foodId": "walnuts-quarter-cup", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "grilled-cheese",
+    "name": "Grilled Cheese",
+    "type": "snack2",
+    "components": [
+      { "foodId": "white-bread-slice", "quantity": 2 },
+      { "foodId": "american-cheese-slice", "quantity": 2 },
+      { "foodId": "peanut-butter-tbsp", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "whey-milk",
+    "name": "Whey Protein with Milk",
+    "type": "snack2",
+    "components": [
+      { "foodId": "whey-protein", "quantity": 1 },
+      { "foodId": "milk-2percent", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "almonds-quarter-cup",
+    "name": "Almonds",
+    "type": "snack2",
+    "components": [
+      { "foodId": "almonds-quarter-cup", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "greek-yogurt-only",
+    "name": "Greek Yogurt",
+    "type": "snack2",
+    "components": [
+      { "foodId": "greek-yogurt-2percent", "quantity": 1 }
+    ]
+  }
+]

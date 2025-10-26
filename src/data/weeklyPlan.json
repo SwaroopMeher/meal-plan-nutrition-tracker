@@ -1,0 +1,124 @@
+{
+  "original": {
+    "version": "original",
+    "days": [
+      {
+        "day": 1,
+        "breakfast": "protein-oatmeal",
+        "lunch": "tomato-dal-rice",
+        "dinner": "potato-fry",
+        "snack1": "greek-yogurt-banana",
+        "snack2": "grilled-cheese"
+      },
+      {
+        "day": 2,
+        "breakfast": "six-egg-omelette",
+        "lunch": "chickpea-curry-chapati",
+        "dinner": "spaghetti-mixed-veg",
+        "snack1": "greek-yogurt-pomegranate",
+        "snack2": "whey-milk"
+      },
+      {
+        "day": 3,
+        "breakfast": "great-grains-cereal-milk",
+        "lunch": "black-bean-curry-rice",
+        "dinner": "paneer-curry-rice",
+        "snack1": "apple-peanut-butter",
+        "snack2": "almonds-quarter-cup"
+      },
+      {
+        "day": 4,
+        "breakfast": "six-egg-omelette",
+        "lunch": "spinach-dal-rice",
+        "dinner": "veg-fried-rice",
+        "snack1": "greek-yogurt-banana",
+        "snack2": "whey-milk"
+      },
+      {
+        "day": 5,
+        "breakfast": "great-grains-cereal-milk",
+        "lunch": "tomato-dal-rice",
+        "dinner": "spaghetti-mixed-veg",
+        "snack1": "apple-walnuts",
+        "snack2": "greek-yogurt-only"
+      },
+      {
+        "day": 6,
+        "breakfast": "six-egg-omelette",
+        "lunch": "chickpea-curry-chapati",
+        "dinner": "paneer-curry-rice",
+        "snack1": "greek-yogurt-pomegranate",
+        "snack2": "almonds-quarter-cup"
+      },
+      {
+        "day": 7,
+        "breakfast": "protein-oatmeal",
+        "lunch": "black-bean-curry-rice",
+        "dinner": "veg-fried-rice",
+        "snack1": "apple-peanut-butter",
+        "snack2": "grilled-cheese"
+      }
+    ]
+  },
+  "optimized": {
+    "version": "optimized",
+    "days": [
+      {
+        "day": 1,
+        "breakfast": "protein-oatmeal",
+        "lunch": "tomato-dal-rice",
+        "dinner": "potato-fry",
+        "snack1": "greek-yogurt-banana",
+        "snack2": "grilled-cheese"
+      },
+      {
+        "day": 2,
+        "breakfast": "six-egg-omelette",
+        "lunch": "chickpea-curry-chapati",
+        "dinner": "spaghetti-mixed-veg",
+        "snack1": "greek-yogurt-pomegranate",
+        "snack2": "whey-milk"
+      },
+      {
+        "day": 3,
+        "breakfast": "great-grains-cereal-milk",
+        "lunch": "black-bean-curry-rice",
+        "dinner": "paneer-curry-rice",
+        "snack1": "apple-peanut-butter",
+        "snack2": "almonds-quarter-cup"
+      },
+      {
+        "day": 4,
+        "breakfast": "six-egg-omelette",
+        "lunch": "spinach-dal-rice",
+        "dinner": "veg-fried-rice",
+        "snack1": "greek-yogurt-banana",
+        "snack2": "whey-milk"
+      },
+      {
+        "day": 5,
+        "breakfast": "great-grains-cereal-milk",
+        "lunch": "tomato-dal-rice",
+        "dinner": "spaghetti-mixed-veg",
+        "snack1": "apple-walnuts",
+        "snack2": "greek-yogurt-only"
+      },
+      {
+        "day": 6,
+        "breakfast": "six-egg-omelette",
+        "lunch": "chickpea-curry-chapati",
+        "dinner": "paneer-curry-rice",
+        "snack1": "greek-yogurt-pomegranate",
+        "snack2": "almonds-quarter-cup"
+      },
+      {
+        "day": 7,
+        "breakfast": "protein-oatmeal",
+        "lunch": "black-bean-curry-rice",
+        "dinner": "veg-fried-rice",
+        "snack1": "apple-peanut-butter",
+        "snack2": "grilled-cheese"
+      }
+    ]
+  }
+}

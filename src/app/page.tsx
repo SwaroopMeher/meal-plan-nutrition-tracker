@@ -33,7 +33,7 @@ interface MicronutrientValue {
   sources?: NutrientSource[];
 }
 
-// Micronutrient Card with Hover Tooltip Component
+// Micronutrient Card with Dropdown Component
 const MicronutrientCard = ({ 
   name, 
   value, 
@@ -49,29 +49,43 @@ const MicronutrientCard = ({
   sources?: NutrientSource[];
   colorClasses: { bg: string; border: string; text: string };
 }) => {
-  const [showTooltip, setShowTooltip] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   
   return (
-    <div 
-      className={`relative p-3 sm:p-4 rounded-xl border ${colorClasses.bg} ${colorClasses.border} cursor-help transition-all duration-200 hover:scale-105`}
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-    >
-      <div className="text-xs sm:text-sm text-white/70 mb-1">{name}</div>
-      <div className="text-base sm:text-lg font-bold text-white">{value}{unit}</div>
-      <div className={`text-xs ${colorClasses.text}`}>{percentage}%</div>
+    <div className={`relative p-3 sm:p-4 rounded-xl border ${colorClasses.bg} ${colorClasses.border} transition-all duration-200 ${showDropdown ? 'z-[99999]' : ''}`}>
+      <div className="flex items-start justify-between">
+        <div className="flex-1">
+          <div className="text-xs sm:text-sm text-white/70 mb-1">{name}</div>
+          <div className="text-base sm:text-lg font-bold text-white">{value}{unit}</div>
+          <div className={`text-xs ${colorClasses.text}`}>{percentage}%</div>
+        </div>
+        
+        {/* Dropdown Arrow Button */}
+        {sources && sources.length > 0 && (
+          <button
+            onClick={() => setShowDropdown(!showDropdown)}
+            className="ml-2 p-1 text-white/70 hover:text-white transition-colors duration-200"
+            aria-label={`Toggle ${name} sources`}
+          >
+            <svg 
+              className={`w-4 h-4 transition-transform duration-200 ${showDropdown ? 'rotate-180' : ''}`}
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        )}
+      </div>
       
-      {/* Hover Tooltip */}
-      {showTooltip && sources && sources.length > 0 && (
-        <div className="fixed z-[99999] w-72 bg-gray-900 border-2 border-emerald-500/50 rounded-xl shadow-2xl p-4 pointer-events-none" style={{
-          left: 'auto',
-          top: 'auto',
-          transform: 'translateY(0.5rem)'
-        }}>
+      {/* Dropdown Content - Overlay */}
+      {showDropdown && sources && sources.length > 0 && (
+        <div className="absolute top-full left-0 right-0 z-[99999] mt-2 bg-black border-2 border-emerald-500/50 rounded-xl shadow-2xl p-4">
           <div className="text-sm font-bold text-white mb-3 border-b border-emerald-500/30 pb-2">
             {name} Sources
           </div>
-          <div className="space-y-2 max-h-64 overflow-y-auto">
+          <div className="space-y-2 max-h-48 overflow-y-auto">
             {sources.map((source, idx) => (
               <div key={idx} className="flex justify-between items-center text-xs gap-2">
                 <span className="text-gray-300 flex-1">{source.meal}</span>
@@ -3777,6 +3791,7 @@ const micronutrientData = {
   }
 };
 
+
 // Data from your research documents (UPDATED with modifications)
 const bulkingData = [
   // Day 1: -19g fat (walnuts 1/4c), -8g fat (PB 1tbsp), -18g fat (almonds 1/4c), +45g carbs (rice 3.5c) = -295 kcal + 216 kcal = -79 kcal
@@ -4025,7 +4040,7 @@ export default function ComprehensiveMealPlanDashboard() {
 
             {/* Micronutrient Status for Selected Day */}
             {currentMicroData && (
-              <div className="backdrop-blur-xl bg-black/40 rounded-xl md:rounded-2xl shadow-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-white/10">
+              <div className="backdrop-blur-xl bg-black/40 rounded-xl md:rounded-2xl shadow-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-white/10 relative z-50">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 gap-2">
                   <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">Day {activeDay} Micronutrient Analysis</h2>
                   <div className="text-xs sm:text-sm text-white/60">

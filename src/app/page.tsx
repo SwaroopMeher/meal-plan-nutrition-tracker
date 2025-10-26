@@ -52,7 +52,7 @@ const MicronutrientCard = ({
   const [showDropdown, setShowDropdown] = useState(false);
   
   return (
-    <div className={`relative p-3 sm:p-4 rounded-xl border ${colorClasses.bg} ${colorClasses.border} transition-all duration-200 ${showDropdown ? 'z-[99999]' : ''}`}>
+    <div className={`relative p-3 sm:p-4 rounded-xl border ${colorClasses.bg} ${colorClasses.border} transition-all duration-200 ${showDropdown ? 'z-40' : ''}`}>
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <div className="text-xs sm:text-sm text-white/70 mb-1">{name}</div>
@@ -81,7 +81,7 @@ const MicronutrientCard = ({
       
       {/* Dropdown Content - Overlay */}
       {showDropdown && sources && sources.length > 0 && (
-        <div className="absolute top-full left-0 right-0 z-[99999] mt-2 bg-black border-2 border-emerald-500/50 rounded-xl shadow-2xl p-4">
+        <div className="absolute top-full left-0 right-0 z-40 mt-2 bg-black border-2 border-emerald-500/50 rounded-xl shadow-2xl p-4">
           <div className="text-sm font-bold text-white mb-3 border-b border-emerald-500/30 pb-2">
             {name} Sources
           </div>
@@ -4040,7 +4040,7 @@ export default function ComprehensiveMealPlanDashboard() {
 
             {/* Micronutrient Status for Selected Day */}
             {currentMicroData && (
-              <div className="backdrop-blur-xl bg-black/40 rounded-xl md:rounded-2xl shadow-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-white/10 relative z-50">
+              <div className="backdrop-blur-xl bg-black/40 rounded-xl md:rounded-2xl shadow-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-white/10 relative z-40">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 gap-2">
                   <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">Day {activeDay} Micronutrient Analysis</h2>
                   <div className="text-xs sm:text-sm text-white/60">
